@@ -16,6 +16,7 @@ end
 
 mkdir -p ~/.ss-client.d
 
+sudo dnf install pip
 sudo pip install genpac
 genpac --gfwlist-url=https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt -p"SOCKS5 127.0.0.1:1080" > ~/.ss-client.d/gfw.pac
 wget https://raw.githubusercontent.com/ding3my/OK-ss-client/master/all.pac -P ~/.ss-client.d
